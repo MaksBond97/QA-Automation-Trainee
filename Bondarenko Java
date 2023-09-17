@@ -1,12 +1,11 @@
- int inp = 0;
-        Scanner sc = new Scanner(System.in);
+ // 1. Составить алгоритм: если введенное число больше 7, то вывести “Привет”
+int inp = 0;
+Scanner sc = new Scanner(System.in);
         sc.useDelimiter("\\R");
-        System.out.println("Введите число больше 7 (7 не входит) : ");
+System.out.println("Введите число больше 7 (7 не входит) : ");
         if (sc.hasNextInt()) {
-            inp = sc.nextInt();
-            if(inp > 7){
-                System.out.println("Привет");
-            }
-        } else {
-            System.out.println("Извините, но это явно не число. Перезапустите программу и попробуйте снова!");
+        inp = sc.nextInt();
+         if(inp > 7){System.out.println("Привет");}
+        } else {System.out.println("Извините, но это явно не число. Перезапустите программу и попробуйте снова!");
         }
+
